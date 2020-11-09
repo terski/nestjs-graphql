@@ -7,7 +7,6 @@ export class AppResolver {
 
     @Query()
     hello(): string {
-        console.log('in resolver');
         return this.appService.getHello();
     }
 }
